@@ -13,14 +13,14 @@
         "outputPath": "dist/angular-universal-hono",
         "index": "./src/index.html",
         "browser": "./src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [],
         "tsConfig": "./tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["./src/favicon.ico", "./src/assets"],
         "styles": ["./src/styles.scss"],
         "scripts": [],
         "server": "src/main.server.ts",
-        "prerender": true,
+        "prerender": false,
         "ssr": {
           "entry": "bun-hono-server.ts"
         },

@@ -47,13 +47,13 @@ app.get('*', async (c) => {
 });
 
 // Tried this as per: https://hono.dev/getting-started/bun
-// export default {
-//   fetch: app.fetch,
-//   port: 4000,
-// };
-
-// But also tried this to directly with the bun serve
-serve({
+export default {
   fetch: app.fetch,
   port: 4000,
-});
+};
+
+// But also tried this to directly with the bun serve
+// serve({
+//   fetch: app.fetch,
+//   port: 4000,
+// });
